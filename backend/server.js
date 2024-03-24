@@ -3,6 +3,8 @@ import dotenv from 'dotenv';
 import cookieParser from 'cookie-parser';
 
 import connectToMongoDB from './db/connectToMongoDB.js ';
+
+import userRoutes from './routes/user.routes.js';
 import authRoutes from './routes/auth.routes.js';
 import messageRoutes from './routes/messages.routes.js';
 
@@ -16,6 +18,7 @@ app.use(cookieParser()); // to parse the incoming request cookies
 
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
+app.use("/api/users", userRoutes);
 
 // app.get('/', (req, res) => {
 //      root route http://localhost:5000/
