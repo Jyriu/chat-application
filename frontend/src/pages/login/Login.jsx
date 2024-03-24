@@ -5,7 +5,7 @@ const Login = () => {
     <div className='flex flex-col items-venter justify-center min-w-96 mx-auto'>
         <div className='w-full p-4 bg-gray-800 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-0 border border-gray-100'>
             <h1 className='text-3xl font-semibold text-center text-gray-300'>
-            Se connecter
+                Se connecter
                 <span className='text-blue-500'> talkz</span>
             </h1>
 
